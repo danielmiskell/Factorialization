@@ -1,0 +1,26 @@
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "cs50.h"
+
+int main(void)
+{
+    int Input = GetInt();
+    
+    if ( Input < 0)
+        {
+        return -1;
+    }
+ 
+    int Output = 1;
+    
+    for (int i = 1; i <= Input; i++)
+        {
+        Output = Output * i;
+      
+    }
+    
+    printf("%i", Output);
+}
